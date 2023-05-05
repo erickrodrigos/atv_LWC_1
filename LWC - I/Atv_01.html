@@ -1,0 +1,29 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-arround_medium">
+			<h1 class="slds-text-heading_large"> Div 01 </h1>
+			<p> Empresa: {empresa}</p>
+			<p> CNPJ: {cnpj} </p>
+			<p> Endereco: {endereco} </p>
+		</div>
+
+		<div class="slds-m-arround_medium" if:true={div}>
+			<h1 class="slds-text-heading_large"> Div 02 </h1>
+			<p> Produto: {produto}</p>
+			<p> Descricao: {descrição} </p>
+			<p> Preco: {preco} </p>
+		</div>
+
+		<div class="slds-m-arround_medium" if:true={div}>
+			<h1 class="slds-text-heading_large"> Div 03 </h1>
+			<p> Promocao: {promoção}</p>
+			<p> Oferta01: {oferta01} </p>
+			<p> Oferta02: {oferta02} </p>
+		</div>
+
+	
+		<lightning-button variant="brand" label="Esconder" title="Alterar Visible" onclick={EscondeDiv}
+			class="slds-m-left_x-small"></lightning-button>
+
+	</lightning-card>
+</template>
